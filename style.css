@@ -23,11 +23,27 @@ h1 {
     font-size: 3em;
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
 }
+
+h2{
+    font-size: 1.5em;
+    font-family:'Helvetica', 'Arial', 'Sans-Serif'
+}
+
 p {
     font-size: 1.5em;
     line-height: 1.4em;
     color: #333;
 }
+
+p.intro_text{
+    font-size: 0.9em;
+    line-height: 0.8m;
+    font-family: 'Helvetica', 'Arial', 'Sans-Serif';
+    font-weight: 900;
+    color: #333;
+
+}
+
 footer {
     border-top: 1px solid #d5d5d5;
     font-size: .8em;
@@ -41,3 +57,4 @@ ul.posts {
 ul.posts li {
     list-style: none;
 }
+
