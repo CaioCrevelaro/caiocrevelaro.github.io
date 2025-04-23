@@ -1,65 +1,324 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 
 <head>
-    
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="description"
+        content="Caio Crevelaro - Mobile Android Developer specialized in Kotlin, Firebase and CI/CD. Check out my projects and get in touch for collaborations.">
+    <meta name="keywords"
+        content="android developer, kotlin, firebase, mobile apps, mobile development, Caio Crevelaro">
+    <meta name="author" content="Caio Crevelaro">
+    <meta name="theme-color" content="#423a8f">
 
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Open Graph / Social Media Meta Tags -->
+    <meta property="og:title" content="Caio Crevelaro - Mobile Developer">
+    <meta property="og:description"
+        content="Mobile Android Developer with 5 years of experience in native solutions.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://caiocrevalaro.dev/">
+    <meta property="og:image" content="/api/placeholder/1200/630">
+
+    <title>Caio Crevelaro - Mobile Android Developer</title>
+
+    <!-- PWA Support -->
+    <link rel="manifest" href="manifest.json">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Caio Crevelaro">
+
+    <!-- Favicons / App Icons -->
+    <link rel="icon" href="/icons/icon-72x72.png" sizes="72x72" type="image/png">
+    <link rel="icon" href="/icons/icon-96x96.png" sizes="96x96" type="image/png">
+    <link rel="icon" href="/icons/icon-128x128.png" sizes="128x128" type="image/png">
+    <link rel="icon" href="/icons/icon-144x144.png" sizes="144x144" type="image/png">
+    <link rel="icon" href="/icons/icon-152x152.png" sizes="152x152" type="image/png">
+    <link rel="icon" href="/icons/icon-192x192.png" sizes="192x192" type="image/png">
+    <link rel="icon" href="/icons/icon-384x384.png" sizes="384x384" type="image/png">
+    <link rel="icon" href="/icons/icon-512x512.png" sizes="512x512" type="image/png">
     
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Apple Touch Icons -->
+    <link rel="apple-touch-icon" href="/icons/icon-72x72.png" sizes="72x72">
+    <link rel="apple-touch-icon" href="/icons/icon-96x96.png" sizes="96x96">
+    <link rel="apple-touch-icon" href="/icons/icon-128x128.png" sizes="128x128">
+    <link rel="apple-touch-icon" href="/icons/icon-144x144.png" sizes="144x144">
+    <link rel="apple-touch-icon" href="/icons/icon-152x152.png" sizes="152x152">
+    <link rel="apple-touch-icon" href="/icons/icon-192x192.png" sizes="192x192">
+    <link rel="apple-touch-icon" href="/icons/icon-384x384.png" sizes="384x384">
+    <link rel="apple-touch-icon" href="/icons/icon-512x512.png" sizes="512x512">
+
+    <!-- Apple Touch Icon Precomposed -->
+    <link rel="apple-touch-icon-precomposed" href="/icons/icon-192x192.png">
+
+    <!-- Apple Splash Screens -->
+    <link rel="apple-touch-startup-image" href="/splash/apple-splash-2048-2732.jpg" media="(device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)">
+    <link rel="apple-touch-startup-image" href="/splash/apple-splash-2732-2048.jpg" media="(device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)">
+    <link rel="apple-touch-startup-image" href="/splash/apple-splash-1668-2388.jpg" media="(device-width: 834px) and (device-height: 1194px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)">
+    <link rel="apple-touch-startup-image" href="/splash/apple-splash-2388-1668.jpg" media="(device-width: 834px) and (device-height: 1194px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)">
+    <link rel="apple-touch-startup-image" href="/splash/apple-splash-1536-2048.jpg" media="(device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)">
+    <link rel="apple-touch-startup-image" href="/splash/apple-splash-2048-1536.jpg" media="(device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)">
+    <link rel="apple-touch-startup-image" href="/splash/apple-splash-1668-2224.jpg" media="(device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)">
+    <link rel="apple-touch-startup-image" href="/splash/apple-splash-2224-1668.jpg" media="(device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)">
+    <link rel="apple-touch-startup-image" href="/splash/apple-splash-1620-2160.jpg" media="(device-width: 810px) and (device-height: 1080px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)">
+    <link rel="apple-touch-startup-image" href="/splash/apple-splash-2160-1620.jpg" media="(device-width: 810px) and (device-height: 1080px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)">
+    <link rel="apple-touch-startup-image" href="/splash/apple-splash-1284-2778.jpg" media="(device-width: 428px) and (device-height: 926px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)">
+    <link rel="apple-touch-startup-image" href="/splash/apple-splash-2778-1284.jpg" media="(device-width: 428px) and (device-height: 926px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)">
+    <link rel="apple-touch-startup-image" href="/splash/apple-splash-1170-2532.jpg" media="(device-width: 390px) and (device-height: 844px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)">
+    <link rel="apple-touch-startup-image" href="/splash/apple-splash-2532-1170.jpg" media="(device-width: 390px) and (device-height: 844px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)">
+    <link rel="apple-touch-startup-image" href="/splash/apple-splash-1125-2436.jpg" media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)">
+    <link rel="apple-touch-startup-image" href="/splash/apple-splash-2436-1125.jpg" media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)">
+    <link rel="apple-touch-startup-image" href="/splash/apple-splash-1242-2688.jpg" media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)">
+    <link rel="apple-touch-startup-image" href="/splash/apple-splash-2688-1242.jpg" media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)">
+    <link rel="apple-touch-startup-image" href="/splash/apple-splash-828-1792.jpg" media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)">
+    <link rel="apple-touch-startup-image" href="/splash/apple-splash-1792-828.jpg" media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)">
+    <link rel="apple-touch-startup-image" href="/splash/apple-splash-1242-2208.jpg" media="(device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)">
+    <link rel="apple-touch-startup-image" href="/splash/apple-splash-2208-1242.jpg" media="(device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)">
+    <link rel="apple-touch-startup-image" href="/splash/apple-splash-750-1334.jpg" media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)">
+    <link rel="apple-touch-startup-image" href="/splash/apple-splash-1334-750.jpg" media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)">
+    <link rel="apple-touch-startup-image" href="/splash/apple-splash-640-1136.jpg" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)">
+    <link rel="apple-touch-startup-image" href="/splash/apple-splash-1136-640.jpg" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)">
+
+    <!-- Microsoft Tiles -->
+    <meta name="msapplication-TileColor" content="#423a8f">
+    <meta name="msapplication-TileImage" content="/icons/icon-144x144.png">
     
+    <!-- Preload important resources -->
+    <link rel="preload" as="font"
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" crossorigin>
+    <link rel="preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Material Design Icons & Fonts -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/material-design-icons/4.0.0/font/material-icons.min.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&display=swap">
+
+    <!-- Stylesheet -->
     <link rel="stylesheet" href="style.css">
-    
-    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 
-    <title>Caio Crevelaro's Github Page</title>
-
+    <!-- Structured Data for SEO -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Caio Crevelaro",
+        "url": "https://caiocrevalaro.dev",
+        "image": "/icons/icon-512x512.png",
+        "jobTitle": "Mobile Developer",
+        "worksFor": {
+            "@type": "Organization",
+            "name": "Freelancer"
+        },
+        "sameAs": [
+            "https://github.com/CaioCrevelaro/",
+            "https://www.linkedin.com/in/caio-crevelaro/",
+            "https://medium.com/@caiocrevalaro"
+        ],
+        "knowsAbout": ["Android Development", "Kotlin", "Mobile Apps", "Python", "Firebase", "CI/CD"]
+    }
+    </script>
 </head>
 
 <body>
+    <!-- Skip to main content for accessibility -->
+    <a href="#main-content" class="visually-hidden">Skip to main content</a>
 
-    <header style="visibility: hidden;">  
-
-        <ul>
-            <li><a href="/">Home</a></li>
-            <li><a href="/about">About</a></li>
-            <li><a href="/cv">CV</a></li>
-            <li><a href="/blog">Blog</a></li>
-        </ul>
-
+    <!-- Header -->
+    <header class="md-top-app-bar">
+        <div class="container">
+            <div class="md-top-app-bar-row">
+                <a href="#" class="md-top-app-bar-title">Caio Crevelaro</a>
+                <button class="md-menu-button" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="nav-list">
+                    <span class="material-symbols-outlined">menu</span>
+                </button>
+                <ul id="nav-list" class="md-nav-list">
+                    <li class="md-nav-item"><a href="#home">Home</a></li>
+                    <li class="md-nav-item"><a href="#about">About</a></li>
+                    <li class="md-nav-item"><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
     </header>
-    
-    <div class="container">
 
-        <div class="blurb">
-          
-            <h1>Hi there, I'm Caio Crevelaro!</h1>
+    <!-- Main Content -->
+    <main id="main-content">
+        <!-- Hero Section -->
+        <section id="home" class="hero fade-in">
+            <div class="container">
+                <div class="hero-content">
+                    <div class="hero-text">
+                        <h1>Hi there,<br> I'm Caio Crevelaro!</h1>
+                        <p>Mobile Developer with experience in Android applications. Specialized in native development,
+                            creating intuitive and high-performance solutions.</p>
+                        <div class="hero-buttons">
+                            <a href="#about" class="md-elevated-button">
+                                <span class="material-symbols-outlined">visibility</span>
+                                About Me
+                            </a>
+                            <a href="#contact" class="md-outlined-button">
+                                <span class="material-symbols-outlined">mail</span>
+                                Contact
+                            </a>
+                        </div>
+                    </div>
+                    <div class="hero-image">
+                        <img src="/assets/profile-photo.jpeg" alt="Caio Crevelaro - Mobile Developer" width="500" height="500">
+                    </div>
+                </div>
+            </div>
+        </section>
 
-            <p class="intro_text">At the moment, this page is under construction. Take a look at the projects that I've been developing, on my Github's page. </p>
-        
-        </div><!-- /.blurb -->
-    
-    </div><!-- /.container -->
-    
+        <!-- About Section -->
+        <section id="about" class="section">
+            <div class="container">
+                <h2 class="section-title">About Me</h2>
+                <div class="about-content">
+                    <div class="about-image">
+                        <img src="/assets/observing-droid.gif" alt="Android character animation" width="400" height="300">
+                    </div>
+                    <div class="about-text">
+                        <h3>Passionate Mobile Developer</h3>
+                        <p>With 5 years of experience in mobile application development, I specialize
+                            in creating exceptional experiences for the Android platform. My journey began
+                            with native development and evolved to encompass cross-platform frameworks.</p>
+                        <p>I believe that the best apps combine intuitive design with clean and efficient code.
+                            My development approach is user-centered, always seeking solutions that are
+                            both elegant and functional.</p>
+                        <div class="skills">
+                            <h4 class="skills-title">My Skills</h4>
+                            <div class="skills-container">
+                                <span class="md-chip">Kotlin</span>
+                                <span class="md-chip">Java</span>
+                                <span class="md-chip">Python</span>
+                                <span class="md-chip">Firebase</span>
+                                <span class="md-chip">Jenkins</span>
+                                <span class="md-chip">Nexus</span>
+                                <span class="md-chip">CI/CD</span>
+                                <span class="md-chip">Git</span>
+                                <span class="md-chip">TDD</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section">
+            <div class="container">
+                <h2 class="section-title">Get in Touch</h2>
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <h3 class="contact-title">Let's Talk</h3>
+                        <p class="contact-text">I'm available for new projects or full-time positions.
+                            If you need a mobile developer for your team, get in touch!</p>
+                        <div class="contact-links">
+                            <a href="mailto:caio.crevelaro.dev@gmail.com" class="contact-link">
+                                <span class="contact-link-icon"><i class="fas fa-envelope"></i></span>
+                                caio.crevelaro.dev@gmail.com
+                            </a>
+                            <a href="tel:+5511971838333" class="contact-link">
+                                <span class="contact-link-icon"><i class="fas fa-phone"></i></span>
+                                +55 11 97183-8333
+                            </a>
+                            <a href="https://wa.me/5511971838333?text=Hi!%20I%20just%20saw%20your%20portfolio%20and%20I%27d%20like%20to%20chat%20about%20Android%20developer%20opportunities.%20Can%20we%20talk%3F" class="contact-link contact-link-whatsapp" target="_blank" rel="noopener">
+                                <span class="contact-link-icon"><i class="fab fa-whatsapp"></i></span>
+                                WhatsApp Message
+                            </a>
+                            <a href="#" class="contact-link">
+                                <span class="contact-link-icon"><i class="fas fa-map-marker-alt"></i></span>
+                                São Paulo, Brazil
+                            </a>
+                        </div>
+                    </div>
+                    <div class="contact-form">
+                        <form action="https://formsubmit.co/caio.crevelaro.dev@gmail.com" method="POST">
+                            <!-- Configurações do FormSubmit -->
+                            <input type="hidden" name="_subject" value="Nova mensagem do Portfolio">
+                            <input type="hidden" name="_template" value="table">
+                            <input type="hidden" name="_captcha" value="false">
+                            <input type="hidden" name="_next" value="https://caiocrevalaro.github.io/thanks.html">
+                            
+                            <div class="form-group">
+                                <label for="name" class="form-label">Name</label>
+                                <input type="text" id="name" name="name" class="form-control" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email" class="form-label">Email</label>
+                                <input type="email" id="email" name="email" class="form-control" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="subject" class="form-label">Subject</label>
+                                <input type="text" id="subject" name="subject" class="form-control" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="message" class="form-label">Message</label>
+                                <textarea id="message" name="message" class="form-control" required rows="5"></textarea>
+                            </div>
+                            <div class="form-group">
+                                <button type="submit" class="md-submit-button">
+                                    <span class="material-symbols-outlined">send</span>
+                                    Send Message
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
     <footer>
-    
-        <ul>
-            <li><a href="mailto:caiombcrevelaro@gmail.com">email</a></li>
-            <li><a href="https://github.com/CaioCrevelaro">github</a></li>
-        </ul>
-       
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">Caio Crevelaro</div>
+                <div class="social-links">
+                    <a href="https://github.com/CaioCrevelaro/" class="social-link" aria-label="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/caio-crevelaro/" class="social-link" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="#" class="social-link" aria-label="Medium">
+                        <i class="fab fa-medium"></i>
+                    </a>
+                </div>
+                <div class="footer-nav">
+                    <a href="#home">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#contact">Contact</a>
+                </div>
+                <div class="copyright">
+                    &copy; 2025 Caio Crevelaro. All rights reserved.
+                </div>
+            </div>
+        </div>
     </footer>
-    
-    <div class= "under_construction_animation">
 
-
-        <lottie-player src="https://assets9.lottiefiles.com/private_files/lf30_y9czxcb9.json" background="transparent"  speed="1"  style="width: 750px; height: 750px;" loop autoplay></lottie-player>
-
-
+    <!-- Back to Top Button -->
+    <div class="back-to-top" aria-label="Back to top">
+        <span class="material-symbols-outlined">arrow_upward</span>
     </div>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
     
-    
-    
+    <!-- PWA Service Worker Registration -->
+    <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('/service-worker.js')
+                    .then(registration => {
+                        console.log('ServiceWorker registration successful with scope: ', registration.scope);
+                    })
+                    .catch(error => {
+                        console.log('ServiceWorker registration failed: ', error);
+                    });
+            });
+        }
+    </script>
 </body>
+
 </html>
