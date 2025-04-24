@@ -827,6 +827,7 @@ footer {
     font-size: var(--md-sys-typescale-body-large-size);
     line-height: var(--md-sys-typescale-body-large-height);
     color: var(--md-sys-color-on-surface-variant);
+    text-align: justify;
     margin-bottom: 2rem;
     max-width: 32rem;
 }
@@ -923,6 +924,7 @@ footer {
     font-size: var(--md-sys-typescale-body-large-size);
     line-height: var(--md-sys-typescale-body-large-height);
     color: var(--md-sys-color-on-surface-variant);
+    text-align: justify;
     margin-bottom: 1.5rem;
 }
 
